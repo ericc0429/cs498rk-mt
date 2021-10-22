@@ -1,0 +1,14 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+> I used this website as a refresher and a guide to all flexbox properties.
+
+https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+> I used this website to figure out vertical centering with image within a flexbox.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+> Margin refresher
+
+https://www.w3schools.com/howto/howto_css_rounded_images.asp
+> I used this website to figure out how to do rounded images.
+
+https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
+> I used this website to crop the images before shrinking and rounding.
