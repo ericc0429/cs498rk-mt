@@ -1,0 +1,22 @@
+> var db = connect( "localhost:27017/myDatabase" );
+
+> var album = db.albums.findOne(
+    {name:"Thriller",
+    artist: "Michael Jackson"},
+    {_id:0,
+    name:0,
+    artist:0,
+    year:0,
+    songs:1}
+);
+
+> var album_songs = db.songs.find(
+    {_id: {$in: album.songs}},
+    {_id:0
+    name:1,
+    artist:0,
+    year:0,
+    duration:0}
+);
+
+DOUBLE CHECK

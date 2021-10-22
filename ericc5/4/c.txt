@@ -1,0 +1,3 @@
+This is not a good strategy, as the list of listeners would only increase
+and clutter up the database, which would cause searching to take more time
+as there is more data to sift through and process.

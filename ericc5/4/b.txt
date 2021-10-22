@@ -1,0 +1,7 @@
+I agree with him because it would be easier to read data with
+two-way referencing between the songs and albums collections.
+This is because we could use datapoints from either the song or
+album collections to arrive at whatever we were searching for.
+
+
+RESEARCH MORE
