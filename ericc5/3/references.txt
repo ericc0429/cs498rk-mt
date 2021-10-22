@@ -1,0 +1,5 @@
+https://www.freecodecamp.org/news/understanding-memoize-in-javascript-51d07d19430e/
+> Helped with using function properties to memoize the isPrime function in memoizedIsPrime.js
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
+> Destructured parameters for creating general-use memoize function.

@@ -1,0 +1,26 @@
+https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components
+> Refresher on controlled components
+
+https://stackoverflow.com/questions/24502898/show-or-hide-element-in-react
+> Toggle show/hide Options Tab
+
+https://stackoverflow.com/questions/44572026/difference-between-concat-and-push/44572132
+> Fixed code not working when using push to add to the roster.
+
+https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+> Found out how to stop GradeList from constantly resetting (Issue was in Gradebook but initially assumed to be in GradeList)
+
+https://stackoverflow.com/questions/28868071/onchange-event-using-react-js-for-drop-down
+> Switching between descending and ascending order.
+
+https://www.w3schools.com/tags/att_option_selected.asp
+> Default selection for ascend/descend
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+> Syntax for sorting in ascending/descending order
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+> Syntax for highlighting
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+> Syntax for parsing numbers to compare in highlight.

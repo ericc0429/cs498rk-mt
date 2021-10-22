@@ -1,0 +1,8 @@
+I believe it could be either A or B.
+It could be A because it's possible for baz() to be called before the fetches,
+and for bar() to be called before foo(), causing an infinite while loop as getUsers
+can't get updated by foo().  As a result, foo() will never get called.
+It could be B because if foo() is called prior to bar(), bar() wouldn't hang in the
+while loop and baz() could be called afterwards.
+However, for option C, it is not possible for foo() to run after bar(), as getUsers
+won't update to true, causing bar() to hang with foo() never getting called.
