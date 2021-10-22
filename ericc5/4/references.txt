@@ -1,0 +1,8 @@
+https://docs.mongodb.com/manual/reference/method/db.collection.find/
+> Documentation on find command (and projections)
+
+https://docs.mongodb.com/manual/reference/method/db.collection.findOne/
+> Documentation on findOne command
+
+https://mongoplayground.net/
+> Testing mongoDB command usage
