@@ -3,3 +3,6 @@ https://www.freecodecamp.org/news/understanding-memoize-in-javascript-51d07d1943
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
 > Destructured parameters for creating general-use memoize function.
+
+https://miguelmota.com/blog/memoization-caching-function-results-in-javascript/
+> More in-depth guide to memoize functions.  Some parts of example code adapted to fit Q3(c) and Q3(d).

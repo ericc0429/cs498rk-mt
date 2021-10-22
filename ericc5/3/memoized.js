@@ -12,35 +12,29 @@ function isPrime( n ) {
     return true; // At this point, every value less than n has been checked, so we can safely assume n is prime.
 }
 
-function add( a, b ) {
-    return a + b;
-}
+Function.prototype.memoized = function() {
+    // Memoization stored in _values
+    this._values = this._values || {};
 
-Function.prototype.memoized = function( arguments ) { // Signature adapted from lecture
-    //let values = {};
-    var self = this;
-
-    const helper = function () {
-        var args = Array.prototype.slice.call( arguments );
-        //console.log( args2 )
-        //var args = Array.prototype.slice.apply( arguments );
-        console.log( args )
-        self._values = self._values || {};
-        if ( self._values[args] === undefined ) {
-            return self._values[args] = self(args);
-        }
-        return self._values[args]
+    // Slice function arguments to get index info
+    var i = Array.prototype.slice.call( arguments );
+  
+    // If result is already stored in _values, return it
+    if ( this._values[i] !== undefined ) {
+        // Debug
+        // console.log( "Memoization used" );
+        return this._values[i];
     }
-    return helper( arguments );
-}
-
-
-// TEST CASES
-
-console.log( add( 5, 10 ) );
-console.log( add.memoized( 5, 10 ) );
+    // If result wasn't found, use function to calculate it, and save it to _values and return it
+    else {
+        var value = this.apply( this, arguments );
+        return this._values[i] = value;
+    }
+  };
 
 /*
+// TEST CASES
+
 console.log( isPrime.memoized( 1 ) ); // Unique case
 console.log( isPrime.memoized( 14 ) ); 
 console.log( isPrime.memoized( 41 ) );
@@ -54,6 +48,6 @@ console.log( isPrime.memoized( 64 ) ); // Memoized (hopefully)
 console.log( isPrime.memoized( 97 ) );
 console.log( isPrime.memoized( 97 ) ); // Memoized (hopefully)
 
-//assert(isPrime.memoized(5), "The function works; 5 is prime.")
-//assert(isPrime._values[5], "The answer has been cached.");
+assert(isPrime.memoized(5), "The function works; 5 is prime.")
+assert(isPrime._values[5], "The answer has been cached.");
 */
